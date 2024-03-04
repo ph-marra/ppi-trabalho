@@ -1,0 +1,95 @@
+html{
+
+    font-family: "Nunito", sans-serif;
+    color: #565656;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+header h1 {
+    display: inline;
+    font-weight: 1000;
+    color: #f95759;
+}
+
+nav {
+    padding: 4px 20px;
+    position: sticky;
+    top: 0;
+    background-color: #b1f6ff;
+    border-radius: 50px;
+}
+
+nav ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    font-size: 1.5em;
+    display: inline-block;
+    width: 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0da7bb;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+body {
+    background-color: #dddddd;
+}
+
+main {
+    background-color: #ffffff;
+    width: 70%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 5px solid #d2d2d2;
+}
+
+main h2 {
+    margin: 15px 0px;
+    font-size: 2rem;
+}
+
+h2 ~ p{
+    
+    margin: 15px 0px;
+    font-size: 1.2rem;
+}
+
+footer {
+
+    padding: 4px 20px;
+    position: sticky;
+    top: 0;
+    background-color: #b1f6ff;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav address {
+    text-decoration: none;
+    color: #0da7bb;
+}
+
+nav address :hover {
+    font-weight: 900;
+}
