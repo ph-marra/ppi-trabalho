@@ -7,21 +7,22 @@ html{
 }
 
 main form {
-    font-size: larger;
+    font-size: 1.5rem;
     font-weight: bolder;
     text-align: center;
 }
 
-input {
-    /* width: 100%; */
-    box-sizing: border-box;
+fieldset {
+    border-radius: 15px;
+    border-color: #f1f1f1;
+}
 
+input {
+    box-sizing: border-box;
     font-size: 1.5rem;
     color: #565656;
-
     padding: 5px 0px;
     border-radius: 15px;
-
     border: 1px solid #565656;
     margin: 10px auto;
 }
@@ -53,19 +54,4 @@ select {
     padding-right: 15px;
     border-radius: 15px;
     font-size: larger;
-}
-
-textarea {
-    text-align: center;
-    color: #565656;
-    /* margin-top: 10px; */
-    border-radius: 15px;
-    font-size: larger;
-}
-
-.box-centered {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
 }
