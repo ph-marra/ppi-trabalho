@@ -1,0 +1,35 @@
+html{
+    font-family: "Nunito", sans-serif;
+    color: #565656;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    border: none;
+    border-radius: 15px;
+}
+
+main h2 {
+    margin: 15px 0px;
+    color: #f95759;
+    font-size: 2rem;
+    text-align: center;
+}
+
+main table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main table img {
+    margin: 10px;
+    border-radius: 15px;
+
+    box-shadow: 5px 5px 10px #565656;
+}
+
+main table img tr td :hover {
+    transform: scale(1.5);
+}
