@@ -21,7 +21,7 @@ html {
 
 /* Estilos para o menu lateral */
 #menu {
-    width: 250px;
+    width: 300px;
     background-color: #b1f6ff;
     color: red;
     transition: width 0.3s;
