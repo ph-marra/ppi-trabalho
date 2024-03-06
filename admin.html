@@ -11,7 +11,6 @@
 
 <body>
   <div class="usuario-container">
-
     <div class="menu" id="menu">
       <div id="sanduiche" onclick="toggleMenu()">
         <i class="material-symbols-outlined">menu</i>
@@ -24,16 +23,16 @@
           </div>
         </div>
         <div id="menu-itens">
-          <a href="#" class="menu-item" onclick="mostrarConteudo('cadastro-fields')">Cadastrar Funcionarios</a>
-          <a href="#" class="menu-item" onclick="mostrarConteudo('cadastro-fields')">Cadastro de pacientes</a>
+          <a href="#" class="menu-item" onclick="mostrarConteudo('cadastro-funcionarios')">Cadastrar Funcionários</a>
+          <a href="#" class="menu-item" onclick="mostrarConteudo('cadastro-pacientes')">Cadastro de Pacientes</a>
           <a href="#" class="menu-item" onclick="mostrarConteudo('employees-table')">Listagem de
-            funcionários</a>
-          <a href="#" class="menu-item" onclick="mostrarConteudo('client-table')">Listagem de pacientes</a>
-          <a href="#" class="menu-item" onclick="mostrarConteudo('address-table')">Listagem de endereços</a>
+            Funcionários</a>
+          <a href="#" class="menu-item" onclick="mostrarConteudo('client-table')">Listagem de Pacientes</a>
+          <a href="#" class="menu-item" onclick="mostrarConteudo('address-table')">Listagem de Endereços</a>
           <a href="#" class="menu-item" onclick="mostrarConteudo('schedual-table')">Listagem de
-            agendamentos</a>
+            Agendamentos</a>
           <a href="#" class="menu-item" onclick="mostrarConteudo('')">Listagem de
-            agendamentos por funcionário</a>
+            Agendamentos por Funcionário</a>
         </div>
         <div class="div-desligar">
           <span>Sair</span>
@@ -42,12 +41,13 @@
     </div>
 
     <div id="conteudo-container" class="conteudo-container">
-      <iframe id="cadastro-fields" class="iframe-component" src="../adminItem/cadastrarFuncionario.html" frameborder="0" width="100%"></iframe>
-      <iframe id="cadastro-fields" class="iframe-component" src="../adminItem/cadastrarPaciente.html" frameborder="0" width="100%"></iframe>
+      <iframe id="cadastro-funcionarios" class="iframe-component" src="../adminItem/cadastrarFuncionario.html" frameborder="0" width="100%" hidden></iframe>
+      <iframe id="cadastro-pacientes" class="iframe-component" src="../adminItem/cadastrarPaciente.html" frameborder="0" width="100%" hidden></iframe>
     </div>
 
   </div>
-  <script src="../scripts/admin.js"></script>
+
+  <script src="scripts/admin.js"></script>
 </body>
 
 </html>

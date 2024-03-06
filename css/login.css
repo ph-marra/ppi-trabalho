@@ -60,7 +60,9 @@ button {
     margin-right: 5px;
     width: 45%;
     box-sizing: border-box;
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    flex: 0 0 auto;
     border-radius: 15px;
 }
 
