@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Funcionário</title>
+  <link rel="stylesheet" href="../css/cadastrar-funcionario.css">
+  <script>
+    function toggleMedicoFields(isMedico) {
+      document.getElementById('camposMedico').style.display = isMedico ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <fieldset>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo">
+          <option value="feminino">Feminino</option>
+          <option value="masculino">Masculino</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep">
+
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" name="logradouro">
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado">
+
+        <label for="dataInicio">Data de Início do Contrato:</label>
+        <input type="date" id="dataInicio" name="dataInicio">
+
+        <label for="salario">Salário:</label>
+        <input type="number" id="salario" name="salario" step="500">
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password">
+
+        <label for="medico">É médico?</label>
+        <input type="checkbox" id="medico" name="medico" onchange="toggleMedicoFields(this.checked)">
+
+        <div id="camposMedico" style="display: none;">
+          <label for="especialidade">Especialidade:</label>
+          <input type="text" id="especialidade" name="especialidade">
+
+          <label for="crm">CRM:</label>
+          <input type="number" id="crm" name="crm">
+        </div>
+      </fieldset>
+
+      <div class="send">
+        <button type="submit">Salvar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
