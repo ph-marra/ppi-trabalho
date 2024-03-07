@@ -23,7 +23,7 @@ html {
 #menu {
     width: 300px;
     background-color: #b1f6ff;
-    color: red;
+    color: #f95759;
     transition: width 0.3s;
 
     display: flex;
@@ -38,8 +38,12 @@ html {
     transition: background-color 0.5s;
 }
 
-#menu-itens {
+#menu-itens > a {
     flex: 1;
+    /* font-size: 1.5em; */
+    text-decoration: none;
+    font-weight: 700;
+    color: #044b54;
 }
 
 #menu-content{

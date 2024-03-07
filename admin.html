@@ -4,15 +4,15 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="../css/admin.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/admin.css">
   <title>Clínica UdiHealth</title>
 </head>
 
 <body>
   <div class="usuario-container">
     <div class="menu" id="menu">
-      <div id="sanduiche" onclick="toggleMenu()">
+      <div id="sanduiche">
         <i class="material-symbols-outlined">menu</i>
       </div>
       <div id="menu-content">
@@ -23,15 +23,19 @@
           </div>
         </div>
         <div id="menu-itens">
-          <a href="#" class="menu-item" onclick="mostrarConteudo('cadastro-funcionarios')">Cadastrar Funcionários</a>
-          <a href="#" class="menu-item" onclick="mostrarConteudo('cadastro-pacientes')">Cadastro de Pacientes</a>
-          <a href="#" class="menu-item" onclick="mostrarConteudo('employees-table')">Listagem de
+          <a href="cadastrar-funcionario.html" class="menu-item">Cadastrar Funcionários</a>
+
+          <a href="listagem-funcionario.html" class="menu-item">Listagem de
             Funcionários</a>
-          <a href="#" class="menu-item" onclick="mostrarConteudo('client-table')">Listagem de Pacientes</a>
-          <a href="#" class="menu-item" onclick="mostrarConteudo('address-table')">Listagem de Endereços</a>
-          <a href="#" class="menu-item" onclick="mostrarConteudo('schedual-table')">Listagem de
+
+          <a href="listagem-paciente.html" class="menu-item">Listagem de Pacientes</a>
+
+          <a href="listagem-enderecos.html" class="menu-item">Listagem de Endereços</a>
+
+          <a href="listagem-agendamento.html" class="menu-item">Listagem de
             Agendamentos</a>
-          <a href="#" class="menu-item" onclick="mostrarConteudo('')">Listagem de
+
+          <a href="listagem-agendamento-funcionario.html" class="menu-item">Listagem de
             Agendamentos por Funcionário</a>
         </div>
         <div class="div-desligar">
@@ -39,15 +43,9 @@
         </div>
       </div>
     </div>
-
-    <div id="conteudo-container" class="conteudo-container">
-      <iframe id="cadastro-funcionarios" class="iframe-component" src="../adminItem/cadastrarFuncionario.html" frameborder="0" width="100%" hidden></iframe>
-      <iframe id="cadastro-pacientes" class="iframe-component" src="../adminItem/cadastrarPaciente.html" frameborder="0" width="100%" hidden></iframe>
-    </div>
-
   </div>
 
-  <script src="scripts/admin.js"></script>
+  <script src="../scripts/admin.js"></script>
 </body>
 
 </html>

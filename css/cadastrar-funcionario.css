@@ -1,67 +1,82 @@
-body {
+html{
+    font-family: "Nunito", sans-serif;
+    color: #565656;
+    line-height: 1.5;
     margin: 0;
-    padding: 30px 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    font-size: 15px;
-    color: #000000;
-    font-weight: bold;
+    padding: 0;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-.form, fieldset {
-    width: 100%; /* Ajustado para mobile-first */
+main form {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+fieldset {
+    border-radius: 15px;
+    border-color: #f1f1f1;
+}
+
+input {
     box-sizing: border-box;
-    background-color: #fff;
-    padding: 20px;
-    margin: 55px auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    color: #565656;
+    padding: 5px 0px;
+    border-radius: 15px;
+    border: 1px solid #565656;
+    margin: 10px auto;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input, select {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 25px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+input :focus {
+    outline: none;
+    border: 3px solid #044b54;
 }
 
 button {
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    width: 100%; /* Ajuste para ocupar toda a largura */
-    margin: 15px auto;
-    cursor: pointer;
-    transition: background-color 0.5s;
+    font-family: "Nunito", sans-serif;
+    font-size: larger;
+    text-decoration: none;
+    font-weight: 750;
+    color: #044b54;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 45%;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 15px;
 }
 
-button:hover {
-    background-color: #0056b3;
+select {
+    text-align: center;
+    color: #565656;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    font-size: larger;
 }
 
-/* Estilos para dispositivos menores */
-@media screen and (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    .form {
-        width: 100%;
-    }
+textarea {
+    text-align: center;
+    font-style: italic;
+    color: #565656;
+    border-radius: 15px;
 }
 
-/* Removido estilos não utilizados e ajustado para clareza e eficiência */
+
+.box-centered {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="file"] {
+    padding: 15px 15px;
+}
