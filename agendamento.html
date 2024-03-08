@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consulta</title>
+    <link rel="stylesheet" href="css/agendamento.css">
+    <script src="js/agendamento-consulta.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" width="100px">
+        <h1>UberClinic</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        
+        <li><a href="galeria.html">Galeria</a></li>
+
+        <li><a href="novo-endereco.html">Novo&nbsp;Endereço</a></li>
+        
+        <li><a href="agendamento.html">Agendamento</a></li>
+        
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <form id="formAgendamento">
+            <fieldset>
+                <legend>Agendar Consulta</legend>
+
+                <label for="especialidade">Especialidade Médica:</label>
+                <select id="especialidade" name="especialidade" required>
+                        <option value="">Selecione</option>
+                        <option value="Psquiquiatra">Psquiquiatra</option>
+                        <option value="Pediatra">Pediatra</option>
+                        <option value="Oftalmologista">Oftalmologista</option>
+                        <option value="Ortopedista">Ortopedista</option>
+                </select>
+
+                <label for="medico">Nome do Médico:</label>
+                <select id="medico" name="medico" required>
+                    <option value="">Selecione</option>
+                    <option value="Adalberto">Adalberto</option>
+                    <option value="Bruno">Bruno</option>
+                    <option value="Carlos">Carlos</option>
+                    <option value="Daniel">Daniel</option>
+                </select>
+
+                <label for="dataConsulta">Data da Consulta:</label>
+                <input type="date" id="dataConsulta" name="dataConsulta" required>
+
+                <label for="horarioConsulta">Horário Disponível:</label>
+                <select id="horarioConsulta" name="horarioConsulta" required>
+                    <option value="">Selecione</option>
+                    <option value="8:00">8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <label for="nomePaciente">Nome:</label>
+                <input type="text" id="nomePaciente" name="nomePaciente" required>
+
+                <label for="emailPaciente">E-mail:</label>
+                <input type="email" id="emailPaciente" name="emailPaciente" required>
+
+                <label for="sexoPaciente">Sexo:</label>
+                <select id="sexoPaciente" name="sexoPaciente" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </fieldset>
+
+            <button type="submit">Agendar</button>
+        </form>
+    </main>
+</body>
+</html>

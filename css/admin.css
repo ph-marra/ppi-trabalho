@@ -19,7 +19,6 @@ html {
     display: flex;
 }
 
-/* Estilos para o menu lateral */
 #menu {
     width: 300px;
     background-color: #b1f6ff;
@@ -58,13 +57,12 @@ html {
     background-color: red;
 }
 
-/* Estilos para o conteúdo principal */
+
 .conteudo-container {
     overflow-y: auto;
     flex: 1;
 }
 
-/* Estilos para o ícone de sanduíche */
 #sanduiche {
     display: none;
 }
@@ -122,7 +120,7 @@ html {
 }
 
 
-/* Estilos responsivos */
+
 @media screen and (max-width: 768px) {
     #menu {
         width: 60px;
